@@ -1,0 +1,70 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family:Verdana, Tahoma, sans-serif;
+}
+
+
+.container-fluid{
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+a{
+    color: #111;
+    text-decoration: none;
+}
+a:hover{
+     color: rgb(0, 117, 0);
+    transition: all .50s ease;
+    
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-bottom: 0.5cm;
+}
+
+footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #ccc;
+    padding: 20px 0 20px 0;
+}
+
+.icons{
+    width:200px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 11.6cm;
+}
+.icons p:hover{
+    color: darkgreen;
+    transform: scale(1.2);
+    transition: all .50s ease;
+    cursor: pointer;
+}
+
+.float-end{
+    text-align: center;
+    font-weight: 1000;
+    margin-top: 8px;
+    font-size: 30px;
+}
+
+.float-end a{
+   color: #111;
+   padding: 5px 12px 5px 12px;
+    
+}
+
+.float-end a:hover{
+    color: rgb(0, 117, 0);
+    transition: all .50s ease;
+    transform: scale(5.2);
+}
