@@ -69,7 +69,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <a class="view-edit" style="text-decoration: none; " href="viewsBlog.php?id=<?=$_POST["id"]?>">
                             <ion-icon name="eye"></ion-icon>
                             </a>
-                            <a style="text-decoration: none;" class="view-edit" href="editar.php?id=<?=$_POST["id"]?>">
+                            <a style="text-decoration: none;" class="view-edit" href="editar.php?id=<?=$_POST["id"]?>&name="<?echo $_GET["name"];?>>
                             <ion-icon name="create"></ion-icon>
                             </a>
                             <a style="text-decoration: none;  "id="delet" href="delete.php?id=<?=$_POST["id"]?>">

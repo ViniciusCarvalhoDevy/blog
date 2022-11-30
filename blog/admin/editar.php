@@ -7,7 +7,16 @@ $stmt->execute();
 
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+/*<?php 
+require 'config.php';
 
+$stmt = $conectar->prepare("DELETE FROM posts WHERE id = :id");
+$id =$_GET['id'];
+$stmt->bindParam(":id",$id);
+$stmt->execute();
+
+echo "Registro apagado!";
+?>*/
 
 ?>
 
@@ -31,7 +40,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
            <div class="row">
             <nav id="sidebarMenu" style=" margin-right:5cm; height:312px;" class="col-md-10  text-white bg-dark pt-5  ">
-                <h2>Bom dia,<?php echo $_POST['nome'];?>
+                <h2>Bom dia,<?php echo $_GET['nome'];?>
                 </h2>
                 <p><a href="header.php">Deslogar</a></p>
                 <?php if(isset($_GET['sair'])){
