@@ -8,7 +8,7 @@ $stmt->execute();
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-
+include('getUser.php');
 ?>
 
 <!DOCTYPE html>
@@ -26,12 +26,13 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
       
-    <main   class=" d-flex">
-      <div class="conteiner-fluid">
+    <main >
+<div  class="d-flex">
+    <div class="conteiner-fluid">
         
            <div class="row">
-            <nav id="sidebarMenu" style=" margin-right:6cm; height:316px" class="col-md-10  text-white bg-dark pt-5  ">
-                <h2>Bom dia,<?php echo $_GET['name'];?>
+            <nav id="sidebarMenu" style="  height:316px" class="col-md-10  text-white bg-dark pt-5  ">
+                <h2>Bom dia,<?php echo "$nameUser"?>
                 </h2>
                 <p><a href="header.php">Deslogar</a></p>
                 <?php if(isset($_GET['sair'])){
@@ -45,12 +46,17 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </ul>
             </nav>
            </div> 
-            
-    </div>
-        <div class="container ">
-            <h1 class="main-title">Meus Posts</h1>
-            <table class="table" id="contacts-table" >
+             
+    </div> 
+<div class="d-block" style="padding-right: 0cm;">
+    <h1 class="">Meus Posts</h1>
+        <div class="container">
+          
+           
+            <table class="table" style="margin: 0 auto;" id="contacts-table" >
+                
                 <thead>
+                    
                         <th scope="col">#</th>
                         <th scope="col">Titulo</th>
                         <th scope="col">Descrição</th>
@@ -69,7 +75,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <a class="view-edit" style="text-decoration: none; " href="viewsBlog.php?id=<?=$_POST["id"]?>">
                             <ion-icon name="eye"></ion-icon>
                             </a>
-                            <a style="text-decoration: none;" class="view-edit" href="editar.php?id=<?=$_POST["id"]?>&name="<?echo $_GET["name"];?>>
+                            <a style="text-decoration: none;" class="view-edit" href="editar.php?id=<?=$_POST["id"]?>">
                             <ion-icon name="create"></ion-icon>
                             </a>
                             <a style="text-decoration: none;  "id="delet" href="delete.php?id=<?=$_POST["id"]?>">
@@ -82,6 +88,10 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </tbody>
             </table>
         </div>
+</div>
+       
+</div>
+  
     </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

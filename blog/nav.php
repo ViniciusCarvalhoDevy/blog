@@ -13,12 +13,16 @@
           <a class="nav-link" href="admin/index.php">Admin</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
+	          <a class="nav-link" href="category.php?cat=Cat-1&id=1">Categoria 1</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="category.php?cat=Cat-2&id=2">Categoria 2</a>
+	        </li>
+
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit">Search</button>
+      <form method="POST" action="buscar.php" class="d-flex" role="search">
+        <input class="form-control me-2" name="buscar" type="search" placeholder="Buscar" aria-label="Buscar">
+        <input class="btn btn-outline-dark" type="submit" value="Buscar">
       </form>
     </div>
   </div>

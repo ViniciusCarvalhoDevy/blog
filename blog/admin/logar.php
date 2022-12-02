@@ -2,7 +2,7 @@
 require 'config.php';
 session_id();
 $logins = $_POST['logins'];
-$passwords = $_POST['passwords'];
+$passwords = md5($_POST['passwords']);
 
 $stmt = $conectar->prepare("SELECT * FROM users WHERE logins = :logins and passwords = :passwords");
 $stmt->bindParam(":logins",$logins);

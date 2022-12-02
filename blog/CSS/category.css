@@ -3,26 +3,31 @@
     padding: 0;
     font-family:Verdana, Tahoma, sans-serif;
 }
-
+#main{
+    margin: 0;
+    padding: 0;
+   
+}
 .container{
-    width: 28cm;
-    height: 300px; 
-    margin-left: 4cm;
+    width: 20cm;
+    height: 250px; 
+    margin-left: 1.5cm; 
 }
 .card{
-    margin-left: 4cm;
-    width: 28cm;
-    height: 300px;
+    
+    width: 20cm;
+    height: 250px;
     border:  1px solid #111;
     border-radius: 10px;
 }
+
 .row{
     display: flex;
 }
 .col img{
     max-width: 400px;
     border-radius: 10px;
-    max-height: 300px;
+    max-height: 250px;
 }
 
 .span{
@@ -31,9 +36,6 @@
 #span{
     padding-top: 1cm;
 }
-h4,h1{
+h4,h2{
     display: flex;
 }
-
-
-

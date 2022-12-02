@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #111;
+}
+a:hover{
+    color:white;
+    transition: all .50s ease;
+}
+.container{
+    width: 1070px;
+    height: 100px;   
+    margin-left: 1.5cm;
+    
+}
+h2{
+    margin-left: 1.5cm;
+}
+.card{
+    width: 1070px;
+    height: 35px;  
+    padding-top: 5px;
+}
+.card:hover{
+    background: rgb(0, 117, 0);
+    transition: all .50s ease;
+}
+
+
