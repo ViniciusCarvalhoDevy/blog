@@ -9,7 +9,7 @@ $stmt->execute(array('id'=>$id));
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-include('getUser.php');
+include('session.php');
 ?>
 
 
@@ -29,6 +29,7 @@ include('getUser.php');
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <title>Posts-Views</title>
+    
 </head>
 <body>
       
@@ -39,17 +40,12 @@ include('getUser.php');
         
            <div class="row">
             <nav id="sidebarMenu" style=" margin-right:5cm; height:312px;" class="col-md-10  text-white bg-dark pt-5  ">
-                <h2>Bom dia,<?php echo "$nameUser";?>
+                <h2>Bom dia,<?php echo $_SESSION['nome']?>
                 </h2>
-                <p><a href="header.php">Deslogar</a></p>
-                <?php if(isset($_GET['sair'])){
-                session_destroy();
-                header("Location: index.php");
-                die();
-                }?>
+                <p><a style="text-decoration:none ; " href="header.php">Deslogar</a></p>
                 <ul class="nav flex-column">
-                    <li class="nav-item"><a href="" class="nav-item">Dashboard</a></li>
-                    <li class="nav-item"><a href="">Inserir</a></li>
+                    <li class="nav-item"><a style="text-decoration:none ;" href="" class="nav-item">Dashboard</a></li>
+                    <li class="nav-item"><a style="text-decoration:none ; " href="insert.php">Inserir</a></li>
                 </ul>
             </nav>
            </div> 
@@ -57,10 +53,10 @@ include('getUser.php');
     </div>
         <div class="container" >
             
-            <form action="editar-fim.php" method="post" enctype="multipart/form-data">
+            <form action="editar-fim.php"  method="post" enctype="multipart/form-data">
                 <h1 class="main-title ">Editar Postagem</h1>
                 <?php foreach($results as $post): ?>
-                    <p><input type="hidden" value="<?= $post["id"] ?>" name="id"></p>
+                    <p ><input type="hidden" value="<?= $post["id"] ?>" name="id"></p>
                     <p><input type="text" value="<?= $post["title"] ?>" name="title"></p>
                     <p><input type="text" value="<?= $post["descriptions"] ?>" name="descriptions"></p>
                 <?php endforeach; ?>

@@ -40,61 +40,34 @@
   </button>
 </div> 
 <!-- Aqui entra os cards-->
-<div class="container-cards">
-        <div class="card" style="width: 23rem; ">
-        <img src="images/card01.jpg" class="card-img-top" height="195px" alt="...">
+
+<div class="container-cards d-flex">
+  <?php foreach($results as $_POST):?> 
+        <div class="card " style="width: 23rem; ">
+        <img src="<?=$_POST['img']?>" class="card-img-top" height="195px" alt="...">
         <div class="card-body">
-            <h5 class="card-title"><a class="title-card" href="">Card title</a></h5>
+            <h5 class="card-title"><a class="title-card" href="viewPost.php?id=<?=$_POST['id']?>"><?=$_POST['title']?></a></h5>
+            <p></p>
         </div>
-         <!--   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-        </div>-->
-        </div>
-        <div class="card" style="width: 23rem;">
+       <!-- <div class="card" style="width: 23rem;">
         <img src="images/card2.jpg" class="card-img-top" height="195px" alt="...">
         <div class="card-body">
             <h5 class="card-title"><a class="title-card" href="">Card title</a></h5>
+            
         </div>
-         <!--   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-        </div>-->
+   
         </div>
         <div class="card" style="width: 23rem;">
         <img src="images/card3.jpg" class="card-img-top"height="195px" alt="...">
         <div class="card-body">
-            <h5 class="card-title"> <a id="title-card" class="title-card" href="">Card title</a></h5>
+            <h5 class="card-title"> <a id="title-card" class="title-card" href="viewPost.php">Card title</a></h5>
         </div>
-          <!--  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-        </div>-->
-        
+       
+</div>-->
+<?php endforeach; ?>
 </div>
 
-</div>
 <?php include('footer.php')?>
 
 

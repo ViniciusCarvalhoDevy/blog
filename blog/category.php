@@ -35,8 +35,8 @@ foreach($results as $post): ?>
 	
   <div class="row">
     <div class="col">
-	<img src="admin/product.jpg"  alt="...">
-      <!--<p><img src=" //$post["image"]" class="card-img-top" alt="..."></p>-->
+	<!--<img src="admin/product.jpg"  alt="...">-->
+  <img src="<?=$post['img']?>" class="card-img-top" alt="..." height="250px" width="300px"  >
     </div>
     <div class="coll">
       <div class="card-body">

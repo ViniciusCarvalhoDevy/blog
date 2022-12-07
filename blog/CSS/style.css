@@ -20,7 +20,8 @@ a:hover{
 }
 
 .container-cards{
-    display: flex;
+    
+    
     justify-content: space-between;
     margin-top: 0.5cm;
     margin-left: 1cm;

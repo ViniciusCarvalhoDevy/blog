@@ -24,12 +24,20 @@
 .row{
     display: flex;
 }
+.col{
+    margin-left: 1cm;
+}
 .col img{
     max-width: 400px;
     border-radius: 10px;
     max-height: 250px;
+    padding-right: 1cm;
+    
 }
-
+.coll{
+    margin-left: 1cm;
+   
+}
 .span{
    padding-top: 1cm;
 }
