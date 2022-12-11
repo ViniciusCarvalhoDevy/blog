@@ -43,28 +43,18 @@
 
 <div class="container-cards d-flex">
   <?php foreach($results as $_POST):?> 
-        <div class="card " style="width: 23rem; ">
+        <div class="card " style="width: 23rem; margin-left:0.2cm; margin-right:0.2cm;">
         <img src="<?=$_POST['img']?>" class="card-img-top" height="195px" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"><a class="title-card" href="viewPost.php?id=<?=$_POST['id']?>"><?=$_POST['title']?></a></h5>
-            <p></p>
+        <a class="card-link" href="viewPost.php?id=<?=$_POST['id']?>"> 
+          <div class="card-body">
+            <h5 class="card-title"><?=$_POST['title']?></h5>
         </div>
-        </div>
-       <!-- <div class="card" style="width: 23rem;">
-        <img src="images/card2.jpg" class="card-img-top" height="195px" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"><a class="title-card" href="">Card title</a></h5>
-            
-        </div>
-   
-        </div>
-        <div class="card" style="width: 23rem;">
-        <img src="images/card3.jpg" class="card-img-top"height="195px" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"> <a id="title-card" class="title-card" href="viewPost.php">Card title</a></h5>
-        </div>
+      </a>
        
-</div>-->
+        </div>
+
+        
+     
 <?php endforeach; ?>
 </div>
 

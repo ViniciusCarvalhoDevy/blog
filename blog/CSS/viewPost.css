@@ -9,6 +9,9 @@
     justify-items: center;
     text-align: center;
 }
+.container #text{
+   text-align: justify; 
+}
 .container img{
     border-radius: 10px;
 }

@@ -1,7 +1,7 @@
 
 <?php
 
-$conectar = new PDO("mysql:dbname=blog; host=localhost", "root", "");
+$conectar = new PDO("mysql:dbname=testBlog; host=localhost", "root", "");
 
 ?>
 

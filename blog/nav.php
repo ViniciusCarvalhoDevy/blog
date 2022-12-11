@@ -40,10 +40,13 @@ $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
           <a class="nav-link" href="admin/index.php">Admin</a>
         </li>
         <li class="nav-item">
-	          <a class="nav-link" href="category.php?cat=Cat-1&id=1">Categoria 1</a>
+	          <a class="nav-link" href="category.php?id=1">Categoria Peças</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="category.php?cat=Cat-2&id=2">Categoria 2</a>
+	          <a class="nav-link" href="category.php?id=2">Categoria Linguagens</a>
+	        </li>
+          <li class="nav-item">
+	          <a class="nav-link" href="admin/cad_user.php">Cadastre-se</a>
 	        </li>
 
       </ul>

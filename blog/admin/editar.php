@@ -45,10 +45,9 @@ include('session.php');
                 <h2>Bom dia,<?php echo $_SESSION['nome']?>
                 </h2>
                 <br>
-                <br>
-                <p class="text-decoration-none"><a  href="header.php?sair">Deslogar</a></p>
+                <p ><a style="text-decoration:none;" href="header.php?sair">Deslogar</a></p>
                 <ul class="nav flex-column">
-                    <li class="nav-item"><a  href="insert.php">Inserir</a></li>
+                    <li class="nav-item"><a style="text-decoration:none;" href="insert.php">Inserir</a></li>
                 </ul>
             </nav>
            </div> 
@@ -59,7 +58,7 @@ include('session.php');
             <form action="editar-fim.php"  method="post" enctype="multipart/form-data">
                 <h1 class="main-title ">Editar Postagem</h1>
                 <?php foreach($results as $post): ?>
-                    <p ><input type="hidden" value="<?= $post["id"] ?>" name="id"></p>
+                    <p><input  type="hidden" value="<?= $post["id"] ?>" name="id"></p>
                     <p><input type="text" value="<?= $post["title"] ?>" name="title"></p>
                     <p><input type="text" value="<?= $post["descriptions"] ?>" name="descriptions"></p>
                 <?php endforeach; ?>

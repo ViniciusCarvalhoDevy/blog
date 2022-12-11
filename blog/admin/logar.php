@@ -17,7 +17,7 @@ if($stmt->rowCount() == 1){
     $_SESSION['nome'] =$info['nome'];
     $_SESSION['logins'] = $info['logins'];
     $_SESSION['passwords'] = $info['passwords'];  
-    header("Location:view2.php?name=".$info['nome']."&id=".$id);
+    header("Location:view2.php");
 }else{
     echo "Usurário Não Encontrado!";
 }

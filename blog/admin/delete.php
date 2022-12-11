@@ -27,7 +27,7 @@ echo "<h1>Registro apagado!</h1>";
     </style>
 </head>
 <body>
-  <a href="http://localhost/blog/admin/view2.php?name=Vinicius%20Carvalho&id=1" id="bu"> <input  type="button" value="Voltar"></a> 
+  <a href="view2.php" id="bu"> <input  type="button" value="Voltar"></a> 
     
 </body>
 </html>

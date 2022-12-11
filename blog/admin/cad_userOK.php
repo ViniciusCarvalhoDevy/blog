@@ -17,5 +17,5 @@ $stmt->bindParam(':passwords', $passwords);
 //executar
 $stmt->execute();
 
-header("Location:cad_user.php");
+header("Location:view2.php");
 ?>

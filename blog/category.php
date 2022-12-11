@@ -1,11 +1,11 @@
 <?php
 require 'admin/config.php';
 
-$cat = $_GET['cat'];
+$id = $_GET['id'];
 
-$stmt = $conectar->prepare('SELECT id, title, img, descriptions, datas FROM posts WHERE id_category = :cat');
+$stmt = $conectar->prepare('SELECT id, title, img, descriptions, datas FROM posts WHERE idcategory = :id');
     
-$stmt->execute(array('cat' => $cat));
+$stmt->execute(array('id' => $id));
 
 $results = $stmt->fetchALL(PDO::FETCH_ASSOC); 
 /*
@@ -67,7 +67,7 @@ foreach($results as $post): ?>
 
  <?php endforeach;?>  
  <div class="back">
-      <a href="http://localhost/blog/" style="font-size:60px; color:black;"><ion-icon name="chevron-back-outline"></ion-icon></a> 
+      <a href="index.php" style="font-size:60px; color:black;"><ion-icon name="chevron-back-outline"></ion-icon></a> 
   </div>           
             
     

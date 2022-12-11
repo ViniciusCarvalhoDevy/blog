@@ -64,7 +64,7 @@ foreach($results as $post): ?>
 </div>
 
  <div class="back">
-      <a href="http://localhost/blog/" style="font-size:60px; color:black;"><ion-icon name="chevron-back-outline"></ion-icon></a> 
+      <a href="index.php" style="font-size:60px; color:black;"><ion-icon name="chevron-back-outline"></ion-icon></a> 
   </div>          
 </div>
 

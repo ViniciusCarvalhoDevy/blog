@@ -26,10 +26,11 @@ $results = $stmt->fetchALL(PDO::FETCH_ASSOC);
 		<h1><?= $post['title'] ?></h1>
 		
 		<p>
-		<img src="<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
+		<img width="600px" height="400px" src="<?= $post['img'] ?>" alt="<?= $post['title'] ?>" >
 		</p>
 		<p><?= date('d/m/Y', strtotime($post['datas'])); ?></p>
 		<p><?= $post['descriptions'] ?></p>
+		<p id="text"><?= $post['text'] ?></p>
 	<?php endforeach; ?>
 </div>
 

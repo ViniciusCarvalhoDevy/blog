@@ -20,7 +20,9 @@ header{
 .main-title{
     margin-bottom: 0.5cm;
 }
-
+form input{
+   background: #fff; padding-top: 10px; padding-bottom: 10px; border-radius: 6px; width: 12cm;
+}
 .table{
     width: 100%;
     border-spacing: 0px;

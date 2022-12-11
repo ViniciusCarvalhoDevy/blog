@@ -13,10 +13,12 @@ a{
     color: #111;
     text-decoration: none;
 }
-a:hover{
-     color: rgb(0, 117, 0);
-    transition: all .50s ease;
-    
+
+.card-link:hover{
+   transition: all .30s ease;
+    background:rgb(0, 117, 0);
+    color: #fff;
+    border-radius: 6px;
 }
 
 .container-cards{

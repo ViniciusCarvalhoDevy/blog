@@ -34,11 +34,10 @@ include('session.php');
             <nav id="sidebarMenu" style="  height:316px" class="col-md-20  text-white bg-dark pt-5  ">
                 <h2>Bom dia,<?php echo $_SESSION['nome'];?>
                 </h2>
-                <p><a href="header.php?sair">Deslogar</a></p>
+                <p><a href="header.php?sair" style="text-decoration: none;">Deslogar</a></p>
                 
                 <ul class="nav flex-column">
-                    <li class="nav-item"><a href="cad_user.php" class="nav-item">Cadastrar Usuario</a></li>
-                    <li class="nav-item"><a href="">Controlar Slides</a></li>
+                    <li class="nav-item"><a href="cad_user.php"  style="text-decoration: none;" class="nav-item">Cadastrar Usuario</a></li>
                 </ul>
             </nav>
            </div> 

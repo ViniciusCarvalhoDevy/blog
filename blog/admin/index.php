@@ -51,7 +51,7 @@
         </form>
            
 
-         <a id="bu" href="http://localhost/blog/index.php"><input type="button" value="Voltar"></a> 
+         <a id="bu" href="/blog-git/blog/index.php"><input type="button" value="Voltar"></a> 
 
             </div>
 

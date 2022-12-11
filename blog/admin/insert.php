@@ -23,7 +23,8 @@
       <span for="">Data</span>
       <input type="date"  name="datas"  placeholder="" required>
     
-  
+      <span for="">Descrição</span>
+      <input type="text"  name="descriptions"  placeholder="" required>
   
     <span for="">Texto Descritivo</span>
    
@@ -54,7 +55,7 @@
   });
   </script>
   <div class="document">
-    <textarea id="myTextarea" name="descriptions"></textarea>
+    <textarea id="myTextarea" name="text"></textarea>
 
   </div>
   
@@ -62,8 +63,8 @@
    
       <select name="category" id="selector">
       <option value="">Categoria</option>
-      <option value="Cat-1">Categoria 1</option>
-      <option value="Cat-2">Categoria 2</option>
+      <option value="1">Peças</option>
+      <option value="2">Linguagens</option>
     </select>
   
   </div>
