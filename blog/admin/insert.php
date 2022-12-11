@@ -53,9 +53,11 @@
     content_css: 'css/content.css'
   });
   </script>
-  <textarea id="myTextarea" name="descriptions"></textarea>
+  <div class="document">
+    <textarea id="myTextarea" name="descriptions"></textarea>
 
-
+  </div>
+  
   
    
       <select name="category" id="selector">

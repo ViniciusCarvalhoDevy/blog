@@ -14,7 +14,8 @@
     margin-left: 1.5cm; 
 }
 .card{
-    
+    margin-left: 0;
+    padding-left: 0;
     width: 20cm;
     height: 250px;
     border:  1px solid #111;
@@ -25,7 +26,7 @@
     display: flex;
 }
 .col{
-    margin-left: 1cm;
+    margin-left: 0cm;
 }
 .col img{
     max-width: 400px;
@@ -35,7 +36,7 @@
     
 }
 .coll{
-    margin-left: 1cm;
+    margin-left: 0cm;
    
 }
 .span{

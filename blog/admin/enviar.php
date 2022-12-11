@@ -4,7 +4,8 @@ require 'config.php';
 
 $title = filter_input(INPUT_POST, 'title');
 $datas = filter_input(INPUT_POST, 'datas');
-$descriptions = filter_input(INPUT_POST, 'descriptions');
+//$descriptions = filter_input(INPUT_POST, 'descriptions');
+$descriptions = $_POST['descriptions'];
 $id_category = filter_input(INPUT_POST, 'category');
 $arquivo =  $_FILES['img'];
 

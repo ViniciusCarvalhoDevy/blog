@@ -31,34 +31,34 @@ include('session.php');
     <div class="conteiner-fluid">
         
            <div class="row">
-            <nav id="sidebarMenu" style="  height:316px" class="col-md-10  text-white bg-dark pt-5  ">
+            <nav id="sidebarMenu" style="  height:316px" class="col-md-20  text-white bg-dark pt-5  ">
                 <h2>Bom dia,<?php echo $_SESSION['nome'];?>
                 </h2>
-                <p><a href="header.php">Deslogar</a></p>
+                <p><a href="header.php?sair">Deslogar</a></p>
                 
                 <ul class="nav flex-column">
-                    <li class="nav-item"><a href="" class="nav-item">Controlar Posts</a></li>
+                    <li class="nav-item"><a href="cad_user.php" class="nav-item">Cadastrar Usuario</a></li>
                     <li class="nav-item"><a href="">Controlar Slides</a></li>
                 </ul>
             </nav>
            </div> 
              
     </div> 
-<div class="d-block" style="padding-right: 0cm;">
-    <h1 class="">Meus Posts</h1>
-        <div class="container">
+<div class="d-block" style="padding-right: 0cm; padding-left: 1cm;">
+    <h1 style="margin-left: 1cm;">Meus Posts</h1>
+        <div class="container" style="margin-right:12cm;">
           
            
-            <table class="table" style="margin: 0 auto;" id="contacts-table" >
+            <table class="table"  id="contacts-table" >
                 
-                <thead>
+                <tr>
                     
-                        <th scope="col">#</th>
-                        <th scope="col">Titulo</th>
-                        <th scope="col">Descrição</th>
-                        <th scope="col">Ações</th>
+                        <td scope="col"> <strong>#</strong> </td>
+                        <td scope="col"> <strong>Titulo</strong> </td>
+                        <td scope="col"> <strong>Descrição</strong> </td>
+                        <td scope="col"> <strong>Ações</strong> </td>
 
-                </thead>
+                </tr>
                
                 
                 <tbody >

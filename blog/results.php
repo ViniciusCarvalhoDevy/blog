@@ -1,11 +1,11 @@
 <?php
 require 'admin/config.php';
 
-$cat = $_GET['cat'];
+$id = $_GET['id'];
 
-$stmt = $conectar->prepare('SELECT id, title, img, descriptions, datas FROM posts WHERE id_category = :cat');
+$stmt = $conectar->prepare('SELECT id, title, img, descriptions, datas FROM posts WHERE id = :id');
     
-$stmt->execute(array('cat' => $cat));
+$stmt->execute(array('id' => $id));
 
 $results = $stmt->fetchALL(PDO::FETCH_ASSOC); 
 /*
@@ -27,7 +27,7 @@ foreach($results as $post): ?>
     <title>Categoria</title>
 </head>
 <body id="main">
-<h1>Produdos Da Categoria <?php echo $_GET['id']?></h1>
+<h1>Produto</h1>
 <?php foreach($results as $post):?> 
 <div class="container">
 	
@@ -63,13 +63,14 @@ foreach($results as $post): ?>
   
 </div>
 
+ <div class="back">
+      <a href="http://localhost/blog/" style="font-size:60px; color:black;"><ion-icon name="chevron-back-outline"></ion-icon></a> 
+  </div>          
 </div>
 
  <?php endforeach;?>  
- <div class="back">
-      <a href="http://localhost/blog/" style="font-size:60px; color:black;"><ion-icon name="chevron-back-outline"></ion-icon></a> 
-  </div>           
             
+ 
     
 
  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -30,7 +30,7 @@ $confirma = false;
         <div class="container">  
 				<hr>				
 				<h5 class="cardP">
-				<a href="admin/viewsBlog.php?id=<?= $value["id"] ?>">
+				<a href="results.php?id=<?= $value["id"] ?>">
 					<div class="card">
 					<?= $value["title"] ?>
 					</div>

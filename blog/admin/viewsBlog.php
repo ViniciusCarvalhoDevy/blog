@@ -7,7 +7,7 @@ $stmt = $conectar->prepare('SELECT id, title, descriptions FROM posts WHERE id =
 $stmt->execute(array('id' =>$id));
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-/* Parei na pagina 25 */
+
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +23,8 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 <div class="container">
-  <a href="http://localhost/blog/admin/view2.php" id="bu"><ion-icon name="chevron-back-outline"></ion-icon></a> 
+
+
     <div class="card " style="max-width: 800px; margin-top: 4cm; margin-left:4cm;">
   <div class="row">
     <div class="col">
@@ -47,9 +48,15 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <hr>
             <p id="description-user" name="des"><?=  $_POST["descriptions"]?></p>
            
-       <?php endforeach;?>  
-      </div>
+       <?php endforeach;?>    
+      
+      </div> 
+      
     </div>
+   
+  </div> 
+  <div class="back">
+      <a href="http://localhost/blog/admin/view2.php" style="font-size:60px; color:black;"><ion-icon name="chevron-back-outline"></ion-icon></a> 
   </div>
 </div>
 </div>

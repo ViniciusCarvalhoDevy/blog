@@ -27,7 +27,9 @@ include('session.php');
     <link rel="stylesheet" href="/blog/CSS/view2.css">
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+<style>
+    
+</style>
     <title>Posts-Views</title>
     
 </head>
@@ -42,10 +44,11 @@ include('session.php');
             <nav id="sidebarMenu" style=" margin-right:5cm; height:312px;" class="col-md-10  text-white bg-dark pt-5  ">
                 <h2>Bom dia,<?php echo $_SESSION['nome']?>
                 </h2>
-                <p><a style="text-decoration:none ; " href="header.php">Deslogar</a></p>
+                <br>
+                <br>
+                <p class="text-decoration-none"><a  href="header.php?sair">Deslogar</a></p>
                 <ul class="nav flex-column">
-                    <li class="nav-item"><a style="text-decoration:none ;" href="" class="nav-item">Dashboard</a></li>
-                    <li class="nav-item"><a style="text-decoration:none ; " href="insert.php">Inserir</a></li>
+                    <li class="nav-item"><a  href="insert.php">Inserir</a></li>
                 </ul>
             </nav>
            </div> 

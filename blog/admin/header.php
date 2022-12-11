@@ -1,9 +1,12 @@
 <?php
 require 'config.php';
 
-
-$info = "sair";
-    header("Location: view2.php?sair=".$info);
+if(isset($_GET['sair'])){
+    session_destroy();
+    header('Location: index.php');
+    die();
+}
+    header("Location: view2.php");
 
 
 
